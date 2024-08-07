@@ -2,7 +2,7 @@
 //  CombineBasicsApp.swift
 //  CombineBasics
 //
-//  Created by Pau Fernández Solà on 7/8/24.
+//  Created by PdePau on 7/8/24.
 //
 
 import SwiftUI
@@ -11,7 +11,9 @@ import SwiftUI
 struct CombineBasicsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                CombineBasicsView()
+            }
         }
     }
 }

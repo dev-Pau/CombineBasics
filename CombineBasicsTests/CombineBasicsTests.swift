@@ -2,7 +2,7 @@
 //  CombineBasicsTests.swift
 //  CombineBasicsTests
 //
-//  Created by Pau Fernández Solà on 7/8/24.
+//  Created by PdePau on 7/8/24.
 //
 
 import XCTest

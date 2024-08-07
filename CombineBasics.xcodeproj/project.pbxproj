@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5FEA72C82C63B3B60063831D /* CombineBasicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72C72C63B3B60063831D /* CombineBasicsApp.swift */; };
-		5FEA72CA2C63B3B60063831D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72C92C63B3B60063831D /* ContentView.swift */; };
+		5FEA72CA2C63B3B60063831D /* CombineBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72C92C63B3B60063831D /* CombineBasicsView.swift */; };
 		5FEA72CC2C63B3B90063831D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEA72CB2C63B3B90063831D /* Assets.xcassets */; };
 		5FEA72CF2C63B3B90063831D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEA72CE2C63B3B90063831D /* Preview Assets.xcassets */; };
 		5FEA72D92C63B3BA0063831D /* CombineBasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72D82C63B3BA0063831D /* CombineBasicsTests.swift */; };
 		5FEA72E32C63B3BA0063831D /* CombineBasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72E22C63B3BA0063831D /* CombineBasicsUITests.swift */; };
 		5FEA72E52C63B3BA0063831D /* CombineBasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72E42C63B3BA0063831D /* CombineBasicsUITestsLaunchTests.swift */; };
+		5FEA72F22C63B6910063831D /* CombineBasicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72F12C63B6910063831D /* CombineBasicsViewModel.swift */; };
+		5FEA72F72C63BFC80063831D /* PasswordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72F62C63BFC80063831D /* PasswordError.swift */; };
+		5FEA72F92C63C1090063831D /* UsernameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA72F82C63C1090063831D /* UsernameError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		5FEA72C42C63B3B60063831D /* CombineBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEA72C72C63B3B60063831D /* CombineBasicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicsApp.swift; sourceTree = "<group>"; };
-		5FEA72C92C63B3B60063831D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FEA72C92C63B3B60063831D /* CombineBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicsView.swift; sourceTree = "<group>"; };
 		5FEA72CB2C63B3B90063831D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FEA72CE2C63B3B90063831D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FEA72D42C63B3BA0063831D /* CombineBasicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineBasicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		5FEA72DE2C63B3BA0063831D /* CombineBasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineBasicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEA72E22C63B3BA0063831D /* CombineBasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicsUITests.swift; sourceTree = "<group>"; };
 		5FEA72E42C63B3BA0063831D /* CombineBasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FEA72F12C63B6910063831D /* CombineBasicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicsViewModel.swift; sourceTree = "<group>"; };
+		5FEA72F62C63BFC80063831D /* PasswordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordError.swift; sourceTree = "<group>"; };
+		5FEA72F82C63C1090063831D /* UsernameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,12 @@
 		5FEA72C62C63B3B60063831D /* CombineBasics */ = {
 			isa = PBXGroup;
 			children = (
+				5FEA72F32C63BFAC0063831D /* Model */,
+				5FEA72F42C63BFB40063831D /* View */,
+				5FEA72F52C63BFB70063831D /* ViewModel */,
 				5FEA72C72C63B3B60063831D /* CombineBasicsApp.swift */,
-				5FEA72C92C63B3B60063831D /* ContentView.swift */,
+				5FEA72C92C63B3B60063831D /* CombineBasicsView.swift */,
+				5FEA72F12C63B6910063831D /* CombineBasicsViewModel.swift */,
 				5FEA72CB2C63B3B90063831D /* Assets.xcassets */,
 				5FEA72CD2C63B3B90063831D /* Preview Content */,
 			);
@@ -125,6 +135,29 @@
 				5FEA72E42C63B3BA0063831D /* CombineBasicsUITestsLaunchTests.swift */,
 			);
 			path = CombineBasicsUITests;
+			sourceTree = "<group>";
+		};
+		5FEA72F32C63BFAC0063831D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FEA72F62C63BFC80063831D /* PasswordError.swift */,
+				5FEA72F82C63C1090063831D /* UsernameError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FEA72F42C63BFB40063831D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FEA72F52C63BFB70063831D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEA72CA2C63B3B60063831D /* ContentView.swift in Sources */,
+				5FEA72F22C63B6910063831D /* CombineBasicsViewModel.swift in Sources */,
+				5FEA72CA2C63B3B60063831D /* CombineBasicsView.swift in Sources */,
 				5FEA72C82C63B3B60063831D /* CombineBasicsApp.swift in Sources */,
+				5FEA72F72C63BFC80063831D /* PasswordError.swift in Sources */,
+				5FEA72F92C63C1090063831D /* UsernameError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
